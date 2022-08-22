@@ -33,11 +33,15 @@
   border: 2px solid red;
 }
 
-.photo {
+.image {
   position: relative;
   height: 50vmin;
   pointer-events: none;
   border-radius: 300px;
+  transition: transform 0.5s; /* Animation */
+}
+.image:hover {
+  transform: scale(1.3);
 }
 
 .contact {

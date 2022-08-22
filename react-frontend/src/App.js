@@ -1,29 +1,21 @@
 import "./App.scss";
 import Description from "./components/description";
 import Navigation from "./components/navigation";
+import Contact from "./components/contact";
+import Menu from "./components/menu";
+import Images from "./components/images";
 import Button from "react-bootstrap/Button";
-import profile from "./images/Profile.jpeg";
+import photo from "./images/Profile.jpeg";
 
 function App() {
   return (
     <div className="App">
-      <Navigation />
+      {/* <Navigation /> */}
+      <Menu />
+      <Images photo={photo} />
       <Description />
-      <header className="App-header">
-        <img src={profile} className="profile" alt="logo" />
-        <Button>This is a button</Button>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Button>This is a button</Button>
+      <Contact />
     </div>
   );
 }

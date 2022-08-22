@@ -1,7 +1,6 @@
 const Description = () => {
   return (
     <section>
-      <h1>Description</h1>
       <p>
         A highly-motivated, bilingual full stack developer and aerospace
         engineering graduate seeking to contribute analytical and

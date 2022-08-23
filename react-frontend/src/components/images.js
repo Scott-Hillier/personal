@@ -22,6 +22,7 @@ const Images = () => {
       slideInterval={5000}
       swipingTransitionDuration={500}
     />
+
     // <section className="images">
     //   <div>
     //     <img

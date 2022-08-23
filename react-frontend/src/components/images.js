@@ -11,12 +11,14 @@ const Images = () => {
   );
   const slideshow = [];
   images.map((image) => {
-    slideshow.push({ original: image });
+    slideshow.push({ original: image, originalHeight: 400 });
   });
   return (
     <ImageGallery
       items={slideshow}
       autoPlay
+      showPlayButton={false}
+      showFullscreenButton={false}
       slideInterval={5000}
       swipingTransitionDuration={500}
     />

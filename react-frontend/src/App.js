@@ -8,12 +8,13 @@ import Button from "react-bootstrap/Button";
 function App() {
   return (
     <div className="App">
-      {/* <Navigation /> */}
       <Menu />
-      <Images />
-      <Description />
-      <Button>This is a button</Button>
-      <Contact />
+      <section className="content">
+        <Images />
+        <Description />
+        <Button>This is a button</Button>
+        <Contact />
+      </section>
     </div>
   );
 }

@@ -1,7 +1,6 @@
-import { useState } from "react";
 import ImageGallery from "react-image-gallery";
+import "../styles/images.scss";
 
-let index = 0;
 const Images = () => {
   function importAll(r) {
     return r.keys().map(r);
@@ -11,17 +10,22 @@ const Images = () => {
   );
   const slideshow = [];
   images.map((image) => {
-    slideshow.push({ original: image, originalHeight: 400 });
+    slideshow.push({
+      original: image,
+      originalHeight: 400,
+    });
   });
   return (
-    <ImageGallery
-      items={slideshow}
-      autoPlay
-      showPlayButton={false}
-      showFullscreenButton={false}
-      slideInterval={5000}
-      swipingTransitionDuration={500}
-    />
+    <section className="images">
+      <ImageGallery
+        items={slideshow}
+        autoPlay
+        showPlayButton={false}
+        showFullscreenButton={false}
+        slideInterval={5000}
+        swipingTransitionDuration={500}
+      />
+    </section>
 
     // <section className="images">
     //   <div>

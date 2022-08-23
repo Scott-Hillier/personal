@@ -1,9 +1,11 @@
-const Description = () => {
+import "../styles/menu.scss";
+
+const Menu = () => {
   return (
     <section className="menu">
-      <i className="bi bi-list"></i>
+      <i className="bi bi-list menu-bars"></i>
     </section>
   );
 };
 
-export default Description;
+export default Menu;

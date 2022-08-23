@@ -17,7 +17,6 @@ const Images = () => {
           onClick={() => {
             index === 0 ? (index = images.length - 1) : index--;
             setImageState(images[index]);
-            console.log("index", index);
           }}
         ></i>
         <img
@@ -30,7 +29,6 @@ const Images = () => {
           onClick={() => {
             index === images.length - 1 ? (index = 0) : index++;
             setImageState(images[index]);
-            console.log("index", index);
           }}
         ></i>
       </div>

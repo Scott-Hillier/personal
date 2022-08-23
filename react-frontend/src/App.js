@@ -5,14 +5,13 @@ import Contact from "./components/contact";
 import Menu from "./components/menu";
 import Images from "./components/images";
 import Button from "react-bootstrap/Button";
-import photo from "./images/Profile.jpeg";
 
 function App() {
   return (
     <div className="App">
       {/* <Navigation /> */}
       <Menu />
-      <Images photo={photo} />
+      <Images />
       <Description />
       <Button>This is a button</Button>
       <Contact />

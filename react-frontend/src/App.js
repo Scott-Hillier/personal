@@ -1,6 +1,5 @@
 import "./App.scss";
 import Description from "./components/description";
-import Navigation from "./components/navigation";
 import Contact from "./components/contact";
 import Menu from "./components/menu";
 import Images from "./components/images";

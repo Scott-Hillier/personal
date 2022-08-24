@@ -20,6 +20,7 @@ const Images = () => {
       <ImageGallery
         items={slideshow}
         autoPlay
+        showBullets={false}
         showPlayButton={false}
         showFullscreenButton={false}
         slideInterval={5000}

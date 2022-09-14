@@ -1,17 +1,22 @@
-import { useState } from "react";
 import "../styles/menu.scss";
 
 const Menu = () => {
-  const [menuState, setMenuState] = useState(false);
+  const list = [
+    { name: "About" },
+    { name: "Projects" },
+    { name: "Education" },
+    { name: "Contact" },
+  ];
 
   return (
-    <section className={menuState ? "menu-extended" : "menu"}>
-      <i
-        className="bi bi-list menu-bars"
-        onClick={() => {
-          menuState ? setMenuState(false) : setMenuState(true);
-        }}
-      ></i>
+    <section className="menu">
+      {list.map((list, i) => {
+        return (
+          <li className="list-item" key={i}>
+            {list.name}
+          </li>
+        );
+      })}
     </section>
   );
 };

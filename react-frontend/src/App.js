@@ -3,6 +3,7 @@ import Description from "./components/description";
 import Contact from "./components/contact";
 import Menu from "./components/menu";
 import Images from "./components/images";
+import Projects from "./components/projects";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <section className="content">
         <Images />
         <Description />
+        <Projects />
         <Contact />
       </section>
     </div>

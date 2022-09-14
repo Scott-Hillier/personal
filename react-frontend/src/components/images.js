@@ -6,7 +6,7 @@ const Images = () => {
     return r.keys().map(r);
   }
   const images = importAll(
-    require.context("../images", false, /\.(png|jpe?g|svg)$/)
+    require.context("../images/personal", false, /\.(png|jpe?g|svg)$/)
   );
   const slideshow = [];
   images.map((image) => {

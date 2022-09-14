@@ -1,23 +1,6 @@
 import "../styles/contact.scss";
 
 const Contact = () => {
-  function importAll(r) {
-    return r.keys().map(r);
-  }
-  const images = importAll(
-    require.context("../icons", false, /\.(png|jpe?g|svg)$/)
-  );
-  const sources = [
-    "https://www.linkedin.com/in/scott-hillier-11aaa5197/",
-    "https://github.com/Scott-Hillier",
-  ];
-  const icons = [];
-  images.map((image, i) => {
-    icons.push({
-      original: image,
-      href: sources[i],
-    });
-  });
   return (
     <section className="icons">
       <a href="https://www.linkedin.com/in/scott-hillier-11aaa5197/">
@@ -34,20 +17,21 @@ const Contact = () => {
           alt="Strange, there should be an icon here"
         />
       </a>
-      <a href="https://github.com/Scott-Hillier">
+      <a href="mailto: scotthhillier@gmail.com">
         <img
           className="icon"
           src="/static/media/03_email.67bda94140af311d041f.png"
           alt="Strange, there should be an icon here"
         />
       </a>
-      <a href="https://github.com/Scott-Hillier">
-        <img
-          className="icon"
-          src="/static/media/04_phone.2fa539562c029c1d51b6.png"
-          alt="Strange, there should be an icon here"
-        />
-      </a>
+      <img
+        onClick={() => {
+          alert("613-402-5186");
+        }}
+        className="icon"
+        src="/static/media/04_phone.2fa539562c029c1d51b6.png"
+        alt="Strange, there should be an icon here"
+      />
     </section>
   );
 };

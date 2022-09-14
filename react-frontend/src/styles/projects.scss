@@ -1,0 +1,29 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.project-area {
+  display: flex;
+  flex-direction: row;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 0.5em;
+  background-color: transparent;
+  border: 2px solid grey;
+  border-radius: 20px;
+}
+.project:hover {
+  color: whitesmoke;
+}
+
+.project-image {
+  max-width: 25vw;
+}

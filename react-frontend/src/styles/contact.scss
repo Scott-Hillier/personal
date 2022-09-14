@@ -1,0 +1,13 @@
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  bottom: 0;
+}
+
+.icon {
+  max-height: 50px;
+}
+.icon:hover {
+  transform: scale(1.3);
+}

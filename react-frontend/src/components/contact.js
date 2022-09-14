@@ -1,19 +1,30 @@
+import "../styles/contact.scss";
+
 const Contact = () => {
+  function importAll(r) {
+    return r.keys().map(r);
+  }
+  const images = importAll(
+    require.context("../icons", false, /\.(png|jpe?g|svg)$/)
+  );
+  const icons = [];
+  images.map((image) => {
+    icons.push({
+      original: image,
+    });
+  });
   return (
-    <section className="contact">
-      <p>Contact</p>
-      <a href="https://github.com/Scott-Hillier">GitHub</a>
-      <a href="https://www.linkedin.com/in/scott-hillier-11aaa5197/">
-        LinkedIn
-      </a>
-      <a href="mailto:scotthhillier@gmail.com">scotthhillier@gmail.com</a>
-      <img src="../icons/github.png" />
-      <img
-        className="image"
-        src={"../icons/github.png"}
-        alt="Strange, there should be photos of me here"
-      ></img>
-      <p>613-402-5186</p>
+    <section className="icons">
+      {icons.map((icon, i) => {
+        return (
+          <img
+            className="icon"
+            src={icon.original}
+            alt="Strange, there should be an icon here"
+            key={i}
+          ></img>
+        );
+      })}
     </section>
   );
 };

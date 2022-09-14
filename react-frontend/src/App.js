@@ -12,7 +12,6 @@ function App() {
       <section className="content">
         <Images />
         <Description />
-        <Button>This is a button</Button>
         <Contact />
       </section>
     </div>

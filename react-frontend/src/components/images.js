@@ -12,7 +12,6 @@ const Images = () => {
   images.map((image) => {
     slideshow.push({
       original: image,
-      originalWidth: 100,
     });
   });
   return (

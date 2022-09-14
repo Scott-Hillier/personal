@@ -23,8 +23,9 @@ const Images = () => {
         showBullets={false}
         showPlayButton={false}
         showFullscreenButton={false}
-        slideInterval={5000}
-        swipingTransitionDuration={500}
+        showNav={false}
+        slideInterval={7000}
+        swipingTransitionDuration={5000}
       />
     </section>
   );

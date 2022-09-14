@@ -4,21 +4,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 400px;
-  border-radius: 500px;
-  border: 2px solid green;
 }
 
 .image-gallery {
-  width: 40%;
+  width: 50%;
   height: auto;
 }
 
 .image-gallery-slide img {
-  width: 100%;
-  height: auto;
+  width: 300px;
+  height: 100%;
   max-height: 80vh;
   object-fit: cover;
   overflow: hidden;
   object-position: center center;
+  border-radius: 400px;
 }

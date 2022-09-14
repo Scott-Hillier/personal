@@ -7,6 +7,12 @@ const Contact = () => {
         LinkedIn
       </a>
       <a href="mailto:scotthhillier@gmail.com">scotthhillier@gmail.com</a>
+      <img src="../icons/github.png" />
+      <img
+        className="image"
+        src={"../icons/github.png"}
+        alt="Strange, there should be photos of me here"
+      ></img>
       <p>613-402-5186</p>
     </section>
   );

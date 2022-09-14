@@ -3,19 +3,22 @@
 .images {
   display: flex;
   justify-content: center;
-  // border: 2px solid green;
+  align-items: center;
+  max-width: 400px;
+  border-radius: 500px;
+  border: 2px solid green;
 }
 
-.image-gallery-slide {
-  // background: rgba(0, 0, 0, 0.4);
-  bottom: 70px;
-  // color: #fff;
-  // left: 45%; // you can modify this value to center the text
-  line-height: 1;
-  padding: 20px 20px;
-  position: absolute;
-  white-space: normal;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid blue;
+.image-gallery {
+  width: 40%;
+  height: auto;
+}
+
+.image-gallery-slide img {
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: cover;
+  overflow: hidden;
+  object-position: center center;
 }

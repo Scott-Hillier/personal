@@ -52,9 +52,9 @@ const Projects = () => {
     <section className="projects">
       <h1>PROJECTS</h1>
       <div className="project-area">
-        {projects.map((project) => {
+        {projects.map((project, i) => {
           return (
-            <a href={project.href} className="project">
+            <a href={project.href} className="project" key={i}>
               <h2>{project.name}</h2>
               <img src={project.original} className="project-image" />
               <p>{project.description}</p>

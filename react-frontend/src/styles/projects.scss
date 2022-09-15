@@ -7,10 +7,11 @@
 .project-area {
   display: flex;
   flex-direction: row;
+  width: 80vw;
 }
 
 .project {
-  display: flex;
+  display: inline-block;
   flex-direction: column;
   margin: 1em;
   text-decoration: none;

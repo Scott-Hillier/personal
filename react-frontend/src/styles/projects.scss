@@ -7,12 +7,15 @@
 .project-area {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  overflow: auto;
   width: 80vw;
 }
 
 .project {
-  display: inline-block;
+  display: flex;
   flex-direction: column;
+  width: 22vw;
   margin: 1em;
   text-decoration: none;
   color: whitesmoke;

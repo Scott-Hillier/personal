@@ -24,14 +24,16 @@ const Contact = () => {
           alt="Strange, there should be an icon here"
         />
       </a>
-      <img
-        onClick={() => {
-          alert("613-402-5186");
-        }}
-        className="icon"
-        src="/static/media/04_phone.2fa539562c029c1d51b6.png"
-        alt="Strange, there should be an icon here"
-      />
+      <a>
+        <img
+          onClick={() => {
+            alert("613-402-5186");
+          }}
+          className="icon"
+          src="/static/media/04_phone.2fa539562c029c1d51b6.png"
+          alt="Strange, there should be an icon here"
+        />
+      </a>
     </section>
   );
 };

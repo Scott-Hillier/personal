@@ -4,6 +4,7 @@ import Contact from "./components/contact";
 import Menu from "./components/menu";
 import Images from "./components/images";
 import Projects from "./components/projects";
+import Education from "./components/education";
 
 function App() {
   return (
@@ -11,8 +12,11 @@ function App() {
       <Menu />
       <section className="content">
         <Images />
+        <br />
         <Description />
+        <br />
         <Projects />
+        <Education />
       </section>
       <Contact />
     </div>

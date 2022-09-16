@@ -18,7 +18,7 @@
   width: 22vw;
   margin: 1em;
   text-decoration: none;
-  color: whitesmoke;
+  color: black;
   padding: 0.5em;
   background-color: transparent;
   border: 2px solid grey;
@@ -26,7 +26,7 @@
   transition: all 0.2s ease-in-out;
 }
 .project:hover {
-  color: whitesmoke;
+  color: black;
   box-shadow: 5px 5px 5px grey;
   transform: scale(1.02);
 }

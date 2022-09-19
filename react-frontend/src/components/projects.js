@@ -1,3 +1,4 @@
+import ScrollAnimation from "react-animate-on-scroll";
 import "../styles/projects.scss";
 
 const Projects = () => {
@@ -51,17 +52,19 @@ const Projects = () => {
   return (
     <section className="projects">
       <h1>PROJECTS</h1>
-      <div className="project-area">
-        {projects.map((project, i) => {
-          return (
-            <a href={project.href} className="project" key={i}>
-              <h2>{project.name}</h2>
-              <img src={project.original} className="project-image" />
-              <p>{project.description}</p>
-            </a>
-          );
-        })}
-      </div>
+      <ScrollAnimation animateIn="fadeIn">
+        <div className="project-area">
+          {projects.map((project, i) => {
+            return (
+              <a href={project.href} className="project" key={i}>
+                <h2>{project.name}</h2>
+                <img src={project.original} className="project-image" />
+                <p>{project.description}</p>
+              </a>
+            );
+          })}
+        </div>
+      </ScrollAnimation>
     </section>
   );
 };

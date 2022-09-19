@@ -51,7 +51,7 @@ const Projects = () => {
   return (
     <section className="projects">
       <h1>PROJECTS</h1>
-      <div className="project-area hidden">
+      <div className="project-area">
         {projects.map((project, i) => {
           return (
             <a href={project.href} className="project" key={i}>

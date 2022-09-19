@@ -1,12 +1,18 @@
 const Description = () => {
   return (
     <section>
+      <p>Hi there, you might be wondering who I am.</p>
+      <p>Let me take this opportunity to introduce myself.</p>
       <p>
-        A highly-motivated, bilingual full stack developer and aerospace
-        engineering graduate seeking to contribute analytical and
-        problem-solving experience in a dynamic team. A detail-oriented and
-        critical thinker ready to collaborate and lead to achieve results.
+        My name is Scott Hillier. I grew up in Ottawa and attended Carleton
+        University to earn my undergraduate degree in aerospace engineering.
       </p>
+      <p>
+        There, I was first introduced to coding and after graduating I decided
+        to learn more about it and enroll in the Lighthouse Labs web
+        developement bootcamp.
+      </p>
+      <p>Here are some of the projects that i've worked on.</p>
     </section>
   );
 };

@@ -11,6 +11,7 @@ function App() {
     <div className="App">
       <Menu />
       <section className="content">
+        <br />
         <Images />
         <br />
         <Description />

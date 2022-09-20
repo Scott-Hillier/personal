@@ -16,8 +16,16 @@ function App() {
         <br />
         <Description />
         <br />
+        <br />
         <Projects />
+        <br />
         <Education />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <h3>Thanks for stopping by!</h3>
       </section>
       <Contact />
     </div>

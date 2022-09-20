@@ -1,12 +1,12 @@
 .projects {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 }
 
 .project-area {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
   overflow: auto;
   width: 80vw;

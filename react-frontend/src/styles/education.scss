@@ -1,0 +1,30 @@
+.educations {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+
+.education-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-right: 2px solid white;
+}
+
+.education-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.education-image {
+  max-width: 15vw;
+}
+
+.education-description {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 27vw;
+}

@@ -18,7 +18,7 @@ const Images = () => {
     <section className="images">
       <ImageGallery
         items={slideshow}
-        autoPlay
+        // autoPlay
         showBullets={false}
         showPlayButton={false}
         showFullscreenButton={false}

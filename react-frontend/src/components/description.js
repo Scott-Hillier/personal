@@ -1,8 +1,6 @@
 const Description = () => {
   return (
     <section>
-      <p>Hi there, you might be wondering who I am.</p>
-      <p>Let me take this opportunity to introduce myself.</p>
       <p>
         My name is Scott Hillier. I grew up in Ottawa and attended Carleton
         University to earn my undergraduate degree in aerospace engineering.

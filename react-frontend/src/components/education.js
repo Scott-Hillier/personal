@@ -5,14 +5,17 @@ const Education = () => {
   const educations = [
     {
       name: "Carleton University",
-      description: "B. Eng. Aerospace Engineering \n Aerodynamics & Propulsion",
+      certificate: "B.Eng.",
+      description: "Aerospace Engineering - Aerodynamics & Propulsion",
       years: "2015-2020",
       href: "https://admissions.carleton.ca/programs/aerospace-engineering/",
     },
     {
       name: "Lighthouse Labs",
+      certificate: "Diploma",
       description: "Full Stack Web Development",
       href: "https://www.lighthouselabs.ca/",
+      years: "2021-2022",
     },
   ];
 
@@ -31,15 +34,19 @@ const Education = () => {
   return (
     <section className="educations">
       <h2>EDUCATION</h2>
+      <br />
       {educations.map((education, i) => {
         console.log(education);
         return (
           <ScrollAnimation animateIn="fadeIn" key={i}>
-            <div className={i % 2 ? "education-left" : "education-right"}>
+            <div className={i % 2 ? "education-right" : "education-left"}>
               <img src={education.original} className="education-image" />
-              <h2>{education.name}</h2>
-              <h3 className="education-description">{education.description}</h3>
+              <h1> </h1>
+              <h4>{education.certificate}</h4>
+              <h3>{education.description}</h3>
+              <h5>{education.years}</h5>
             </div>
+            <br />
           </ScrollAnimation>
         );
       })}

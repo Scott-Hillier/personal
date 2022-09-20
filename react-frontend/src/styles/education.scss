@@ -1,30 +1,35 @@
 .educations {
   display: flex;
   flex-direction: column;
-  width: 50vw;
+  align-items: center;
+  width: 55vw;
 }
 
 .education-left {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-right: 1vw;
   border-right: 2px solid white;
+  margin-right: 26.85vw;
 }
 
 .education-right {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-left: 1vw;
+  border-left: 2px solid white;
+  margin-left: 25vw;
 }
-
 .education-image {
   max-width: 15vw;
 }
 
-.education-description {
-  display: flex;
-  justify-content: flex-start;
-  max-width: 27vw;
-}
+// .education-description {
+//   display: flex;
+//   justify-content: flex-start;
+//   max-width: 27vw;
+// }

@@ -6,7 +6,7 @@ const Education = () => {
     {
       name: "Carleton University",
       certificate: "B.Eng.",
-      description: "Aerospace Engineering - Aerodynamics & Propulsion",
+      description: "Aerospace Engineering",
       years: "2015-2020",
       href: "https://admissions.carleton.ca/programs/aerospace-engineering/",
     },
@@ -33,7 +33,7 @@ const Education = () => {
 
   return (
     <section className="educations">
-      <h2>EDUCATION</h2>
+      <h1>EDUCATION</h1>
       <br />
       {educations.map((education, i) => {
         console.log(education);

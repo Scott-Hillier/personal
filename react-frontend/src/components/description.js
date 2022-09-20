@@ -7,10 +7,12 @@ const Description = () => {
       </p>
       <p>
         There, I was first introduced to coding and after graduating I decided
-        to learn more about it and enroll in the Lighthouse Labs web
+        to learn more about it and enrolled in the Lighthouse Labs web
         developement bootcamp.
       </p>
-      <p>Here are some of the projects that i've worked on.</p>
+      <p>Here are some of the projects that I've worked on.</p>
+      <br />
+      <i class="bi bi-arrow-down-circle-fill"></i>
     </section>
   );
 };

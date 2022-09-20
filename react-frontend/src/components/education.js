@@ -32,7 +32,7 @@ const Education = () => {
   console.log(educations);
 
   return (
-    <section className="educations">
+    <section className="educations" id="educations">
       <h1>EDUCATION</h1>
       <br />
       {educations.map((education, i) => {

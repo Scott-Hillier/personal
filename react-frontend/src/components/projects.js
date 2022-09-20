@@ -50,22 +50,22 @@ const Projects = () => {
     projects[i].original = image;
   });
   return (
-    <section className="projects">
+    <section className="projects" id="projects">
       <h1>PROJECTS</h1>
       <br />
-      <ScrollAnimation animateIn="fadeIn">
-        <div className="project-area">
-          {projects.map((project, i) => {
-            return (
+      <div className="project-area">
+        {projects.map((project, i) => {
+          return (
+            <ScrollAnimation animateIn="fadeIn">
               <a href={project.href} className="project" key={i}>
                 <h2>{project.name}</h2>
                 <img src={project.original} className="project-image" />
                 <p>{project.description}</p>
               </a>
-            );
-          })}
-        </div>
-      </ScrollAnimation>
+            </ScrollAnimation>
+          );
+        })}
+      </div>
       <br />
     </section>
   );

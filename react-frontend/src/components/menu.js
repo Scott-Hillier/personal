@@ -2,9 +2,9 @@ import "../styles/menu.scss";
 
 const Menu = () => {
   const list = [
-    { name: "About" },
-    { name: "Projects" },
-    { name: "Education" },
+    { name: "About", href: "#about" },
+    { name: "Projects", href: "#projects" },
+    { name: "Education", href: "#educations" },
     { name: "Contact" },
   ];
 
@@ -12,9 +12,9 @@ const Menu = () => {
     <section className="menu">
       {list.map((list, i) => {
         return (
-          <li className="list-item" key={i}>
-            {list.name}
-          </li>
+          <a href={list.href} className="list-item">
+            <li key={i}>{list.name}</li>
+          </a>
         );
       })}
     </section>

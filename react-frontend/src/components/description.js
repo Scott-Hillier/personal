@@ -12,7 +12,7 @@ const Description = () => {
       </p>
       <p>Here are some of the projects that I've worked on.</p>
       <br />
-      <i class="bi bi-arrow-down-circle-fill"></i>
+      <i className="bi bi-arrow-down-circle-fill"></i>
     </section>
   );
 };

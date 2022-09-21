@@ -29,14 +29,11 @@ const Education = () => {
     educations[i].original = image;
   });
 
-  console.log(educations);
-
   return (
     <section className="educations" id="educations">
       <h1>EDUCATION</h1>
       <br />
       {educations.map((education, i) => {
-        console.log(education);
         return (
           <ScrollAnimation animateIn="fadeIn" key={i}>
             <div className={i % 2 ? "education-right" : "education-left"}>

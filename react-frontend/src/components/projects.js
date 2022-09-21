@@ -1,11 +1,15 @@
+import { useState } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import "../styles/projects.scss";
 
 const Projects = () => {
+  const [description, setDescription] = useState(false);
+
   const projects = [
     {
       name: "Odyssey",
-      description: "Outdoor adventure planning",
+      description:
+        "Outdoor adventure planningOutdoor adventure planningOutdoor adventure planningOutdoor adventure planningOutdoor adventure planningOutdoor adventure planningOutdoor adventure planningOutdoor adventure planningOutdoor adventure planningOutdoor adventure plannings",
       stack: "React, NodeJS, PostgreSQL",
       href: "https://github.com/Scott-Hillier/Odyssey",
       image: "../images/projects",
@@ -53,22 +57,36 @@ const Projects = () => {
     <section className="projects" id="projects">
       <h1>PROJECTS</h1>
       <br />
-      <div className="project-area">
-        {projects.map((project, i) => {
-          return (
-            <ScrollAnimation animateIn="fadeIn">
-              <a href={project.href} className="project" key={i}>
-                <h2>{project.name}</h2>
-                <img src={project.original} className="project-image" />
-                <p>{project.description}</p>
-              </a>
-            </ScrollAnimation>
-          );
-        })}
-      </div>
+      <ScrollAnimation animateIn="fadeIn">
+        <div className="project">
+          <a href={projects[0].href}>
+            <h2 className="project-title">{projects[0].name}</h2>
+            <img src={projects[0].original} className="project-image" />
+          </a>
+          <i
+            onClick={(event) => {
+              description ? setDescription(false) : setDescription(true);
+            }}
+            className="bi bi-arrow-bar-down"
+          ></i>
+          <h4 className={description ? "project-description" : "hidden"}>
+            {projects[0].description}
+          </h4>
+        </div>
+      </ScrollAnimation>
       <br />
     </section>
   );
 };
+
+{
+  /* <a href={project.href} className="project" key={i}>
+      <div>
+        <h2 className="project-title">{project.name}</h2>
+        <img src={project.original} className="project-image" />
+      </div>
+      <p>{project.description}</p>
+    </a> */
+}
 
 export default Projects;

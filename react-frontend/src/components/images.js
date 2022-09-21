@@ -15,7 +15,7 @@ const Images = () => {
     });
   });
   return (
-    <section className="images">
+    <section className="images" id="images">
       <ImageGallery
         items={slideshow}
         // autoPlay

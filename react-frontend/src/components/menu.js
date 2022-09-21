@@ -2,7 +2,7 @@ import "../styles/menu.scss";
 
 const Menu = () => {
   const list = [
-    { name: "About", href: "#about" },
+    { name: "About", href: "#images" },
     { name: "Projects", href: "#projects" },
     { name: "Education", href: "#educations" },
     { name: "Contact" },

@@ -11,13 +11,6 @@ const Projects = () => {
       image: "../images/projects",
     },
     {
-      name: "Tournament Organizer",
-      description: "Tournament organizing website for the bike polo community",
-      stack: "React, NodeJS, PostgreSQL",
-      href: "https://github.com/Scott-Hillier/tournament-organizer",
-      image: "../images/projects",
-    },
-    {
       name: "Interview Scheduler",
       description: "Scheduler to help individuals arrange their interviews",
       stack: "React",
@@ -29,6 +22,13 @@ const Projects = () => {
       description: "E-commerce website for users to buy and sell items",
       stack: "Ruby on Rails",
       href: "https://github.com/Scott-Hillier/jungle",
+      image: "../images/projects",
+    },
+    {
+      name: "Tournament Organizer",
+      description: "Tournament organizing website for the bike polo community",
+      stack: "React, NodeJS, PostgreSQL",
+      href: "https://github.com/Scott-Hillier/tournament-organizer",
       image: "../images/projects",
     },
     {

@@ -8,7 +8,8 @@ const Projects = () => {
   const projects = [
     {
       name: "Odyssey",
-      description: "Outdoor adventure plannings",
+      description:
+        "Outdoor adventure planningsOutdoor adventure planningsOutdoor adventure planningsOutdoor adventure planningsOutdoor adventure planningsOutdoor adventure planningsOutdoor adventure plannings",
       stack: "React, NodeJS, PostgreSQL",
       href: "https://github.com/Scott-Hillier/Odyssey",
       image: "../images/projects",
@@ -67,47 +68,47 @@ const Projects = () => {
     return index;
   };
 
-  useEffect(() => {
-    setTimeout(() => {
-      setIndex((index + 1) % projects.length);
-      console.log(index);
-    }, 5000);
-  }, [index]);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setIndex((index + 1) % projects.length);
+  //     console.log(index);
+  //   }, 5000);
+  // }, [index]);
 
   return (
     <section className="projects" id="projects">
       <h1>PROJECTS</h1>
       <br />
-      <ScrollAnimation animateIn="fadeIn">
-        <div className="project-area">
-          {projects.map((project, i) => {
-            const indexLeft = adjacent(index - 1);
-            const indexRight = adjacent(index + 1);
+      {/* <ScrollAnimation animateIn="fadeIn"> */}
+      <div className="project-area">
+        {projects.map((project, i) => {
+          const indexLeft = adjacent(index - 1);
+          const indexRight = adjacent(index + 1);
 
-            let className = "project";
+          let className = "project";
 
-            if (i === index) {
-              className += " project--active";
-            } else if (i === indexRight) {
-              className += " project--right";
-            } else if (i === indexLeft) {
-              className += " project--left";
-            } else {
-              className += " project--hidden";
-            }
+          if (i === index) {
+            className += " project--active";
+          } else if (i === indexRight) {
+            className += " project--right";
+          } else if (i === indexLeft) {
+            className += " project--left";
+          } else {
+            className += " project--hidden";
+          }
 
-            return (
-              <div className={className} key={i}>
-                <a href={project.href}>
-                  <h2 className="project-title">{project.name}</h2>
-                  <img src={project.original} className="project-image" />
-                </a>
-                <h4 className="project-description">{project.description}</h4>
-              </div>
-            );
-          })}
-        </div>
-      </ScrollAnimation>
+          return (
+            <div className={className} key={i} onClick={() => setIndex(i)}>
+              {/* <a href={project.href}> */}
+              <h2 className="project-title">{project.name}</h2>
+              <img src={project.original} className="project-image" />{" "}
+              {/* </a> */}
+              <h4 className="project-description">{project.description}</h4>
+            </div>
+          );
+        })}
+      </div>
+      {/* </ScrollAnimation> */}
       <br />
     </section>
   );

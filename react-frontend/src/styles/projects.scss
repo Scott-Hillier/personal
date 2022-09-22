@@ -16,6 +16,7 @@
   position: absolute;
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 30vw;
   height: 40vh;
   text-align: center;
@@ -27,29 +28,52 @@
 }
 
 .project-image {
-  width: 90%;
-  max-height: 20vh;
+  width: 95%;
+  max-height: 35vh;
+  z-index: 9;
 }
 
 .project--active {
+  align-items: center;
+  width: 45vw;
+  height: 50vh;
   opacity: 1;
   transform: scale(1);
+  z-index: 9;
+}
+.project--active:hover {
+  height: 60vh;
+  .project-description {
+    opacity: 1;
+    transform: translateY(50%);
+  }
 }
 
 .project--left {
-  transform: translateX(-95%) scale(0.6);
+  width: 22vw;
+  height: 40vh;
+  transform: translateX(-135%) scale(0.6);
   transition: 500ms;
   opacity: 0.3;
 }
 
 .project--right {
-  transform: translateX(95%) scale(0.6);
+  width: 22vw;
+  height: 40vh;
+  transform: translateX(135%) scale(0.6);
   transition: 500ms;
   opacity: 0.5;
 }
 
 .project--hidden {
   transform: scale(0.6);
-
   opacity: 0;
+}
+
+.project-description {
+  width: 90%;
+  opacity: 0;
+  position: absolute;
+  bottom: 11vh;
+  transition: 500ms;
 }

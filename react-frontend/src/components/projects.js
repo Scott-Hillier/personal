@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import "../styles/projects.scss";
 
@@ -54,14 +54,20 @@ const Projects = () => {
     projects[i].original = image;
   });
 
-  const [project, setProject] = useState(projects[0]);
+  let index = 0;
 
-  let i = 0;
+  const [project, setProject] = useState(projects[index]);
 
   const nextProject = () => {
-    i++;
-    setProject(projects[i]);
-    console.log(i);
+    index === projects.length ? (index = 0) : index++;
+    setProject(projects[index]);
+    console.log(index);
+  };
+
+  const previousProject = () => {
+    index === 0 ? (index = projects.length - 1) : index--;
+    setProject(projects[index]);
+    console.log(index);
   };
 
   return (
@@ -73,10 +79,7 @@ const Projects = () => {
           <i
             className="bi bi-arrow-bar-left project-arrow"
             onClick={() => {
-              i === 0 ? (i = projects.length - 1) : (i = i - 1);
-              setProject(projects[i]);
-              console.log(project);
-              console.log(i);
+              previousProject();
             }}
           ></i>
           <div className="project">
@@ -106,15 +109,5 @@ const Projects = () => {
     </section>
   );
 };
-
-{
-  /* <a href={project.href} className="project" key={i}>
-      <div>
-        <h2 className="project-title">{project.name}</h2>
-        <img src={project.original} className="project-image" />
-      </div>
-      <p>{project.description}</p>
-    </a> */
-}
 
 export default Projects;

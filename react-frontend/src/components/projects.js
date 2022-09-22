@@ -8,8 +8,7 @@ const Projects = () => {
   const projects = [
     {
       name: "Odyssey",
-      description:
-        "Outdoor adventure planningOutdoor adventure planningOutdoor adventure planningOutdoor adventure planningOutdoor adventure planningOutdoor adventure planningOutdoor adventure planningOutdoor adventure planningOutdoor adventure planningOutdoor adventure plannings",
+      description: "Outdoor adventure plannings",
       stack: "React, NodeJS, PostgreSQL",
       href: "https://github.com/Scott-Hillier/Odyssey",
       image: "../images/projects",
@@ -54,21 +53,26 @@ const Projects = () => {
     projects[i].original = image;
   });
 
-  let index = 0;
+  const [index, setIndex] = useState(0);
 
-  const [project, setProject] = useState(projects[index]);
+  const adjacent = (index) => {
+    if (index === -1) {
+      return projects.length - 1;
+    }
 
-  const nextProject = () => {
-    index === projects.length ? (index = 0) : index++;
-    setProject(projects[index]);
-    console.log(index);
+    if (index === projects.length) {
+      return 0;
+    }
+
+    return index;
   };
 
-  const previousProject = () => {
-    index === 0 ? (index = projects.length - 1) : index--;
-    setProject(projects[index]);
-    console.log(index);
-  };
+  useEffect(() => {
+    setTimeout(() => {
+      setIndex((index + 1) % projects.length);
+      console.log(index);
+    }, 5000);
+  }, [index]);
 
   return (
     <section className="projects" id="projects">
@@ -76,33 +80,32 @@ const Projects = () => {
       <br />
       <ScrollAnimation animateIn="fadeIn">
         <div className="project-area">
-          <i
-            className="bi bi-arrow-bar-left project-arrow"
-            onClick={() => {
-              previousProject();
-            }}
-          ></i>
-          <div className="project">
-            <a href={project.href}>
-              <h2 className="project-title">{project.name}</h2>
-              <img src={project.original} className="project-image" />
-            </a>
-            <i
-              onClick={(event) => {
-                description ? setDescription(false) : setDescription(true);
-              }}
-              className="bi bi-arrow-bar-down"
-            ></i>
-            <h4 className={description ? "project-description" : "hidden"}>
-              {project.description}
-            </h4>
-          </div>
-          <i
-            className="bi bi-arrow-bar-right project-arrow"
-            onClick={() => {
-              nextProject();
-            }}
-          ></i>
+          {projects.map((project, i) => {
+            const indexLeft = adjacent(index - 1);
+            const indexRight = adjacent(index + 1);
+
+            let className = "project";
+
+            if (i === index) {
+              className += " project--active";
+            } else if (i === indexRight) {
+              className += " project--right";
+            } else if (i === indexLeft) {
+              className += " project--left";
+            } else {
+              className += " project--hidden";
+            }
+
+            return (
+              <div className={className} key={i}>
+                <a href={project.href}>
+                  <h2 className="project-title">{project.name}</h2>
+                  <img src={project.original} className="project-image" />
+                </a>
+                <h4 className="project-description">{project.description}</h4>
+              </div>
+            );
+          })}
         </div>
       </ScrollAnimation>
       <br />

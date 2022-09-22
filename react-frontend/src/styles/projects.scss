@@ -24,7 +24,7 @@
   background-color: rgb(31, 31, 31);
   border: 2px solid grey;
   border-radius: 20px;
-  transition: all 0.2s ease-in-out;
+  transition: box-shadow 0.2s, transform 0.2s;
 }
 .project:hover {
   color: white;
@@ -35,6 +35,7 @@
 .project-title {
   text-decoration: none;
   color: white;
+  font-size: 45px;
 }
 
 .project-image {
@@ -48,4 +49,8 @@
 
 .hidden {
   visibility: hidden;
+}
+
+.project-arrow {
+  margin-top: 22%;
 }

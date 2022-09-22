@@ -53,25 +53,53 @@ const Projects = () => {
   images.map((image, i) => {
     projects[i].original = image;
   });
+
+  const [project, setProject] = useState(projects[0]);
+
+  let i = 0;
+
+  const nextProject = () => {
+    i++;
+    setProject(projects[i]);
+    console.log(i);
+  };
+
   return (
     <section className="projects" id="projects">
       <h1>PROJECTS</h1>
       <br />
       <ScrollAnimation animateIn="fadeIn">
-        <div className="project">
-          <a href={projects[0].href}>
-            <h2 className="project-title">{projects[0].name}</h2>
-            <img src={projects[0].original} className="project-image" />
-          </a>
+        <div className="project-area">
           <i
-            onClick={(event) => {
-              description ? setDescription(false) : setDescription(true);
+            className="bi bi-arrow-bar-left project-arrow"
+            onClick={() => {
+              i === 0 ? (i = projects.length - 1) : (i = i - 1);
+              setProject(projects[i]);
+              console.log(project);
+              console.log(i);
             }}
-            className="bi bi-arrow-bar-down"
           ></i>
-          <h4 className={description ? "project-description" : "hidden"}>
-            {projects[0].description}
-          </h4>
+          <div className="project">
+            <a href={project.href}>
+              <h2 className="project-title">{project.name}</h2>
+              <img src={project.original} className="project-image" />
+            </a>
+            <i
+              onClick={(event) => {
+                description ? setDescription(false) : setDescription(true);
+              }}
+              className="bi bi-arrow-bar-down"
+            ></i>
+            <h4 className={description ? "project-description" : "hidden"}>
+              {project.description}
+            </h4>
+          </div>
+          <i
+            className="bi bi-arrow-bar-right project-arrow"
+            onClick={() => {
+              nextProject();
+            }}
+          ></i>
         </div>
       </ScrollAnimation>
       <br />

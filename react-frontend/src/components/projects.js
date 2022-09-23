@@ -95,7 +95,7 @@ const Projects = () => {
               {i === index ? (
                 <div className="project-header">
                   <h2 className="project-title">{project.name}</h2>
-                  <a href={project.href}>
+                  <a href={project.href} className="project-github">
                     <i className="bi bi-github project-href"></i>
                     <h5>View on GitHub</h5>
                   </a>

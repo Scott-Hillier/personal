@@ -79,6 +79,7 @@
 
 .project-href {
   color: white;
+  margin-right: 1vw;
 }
 
 .project-description {
@@ -87,4 +88,15 @@
   opacity: 0;
   bottom: 11vh;
   transition: 500ms;
+}
+
+.project-github {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  margin-top: -1%;
+}
+.project-github:hover {
+  color: white;
 }

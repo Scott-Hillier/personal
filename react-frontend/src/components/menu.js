@@ -15,14 +15,16 @@ const Menu = () => {
           <a href={list.href} className="list-item" key={i}>
             <li
               onClick={() => {
-                document
-                  .getElementById("iconList")
-                  .classList.add("vertical-shake");
-                setTimeout(() => {
+                if (list.name === "Contact") {
                   document
                     .getElementById("iconList")
-                    .classList.remove("vertical-shake");
-                }, 1000);
+                    .classList.add("vertical-shake");
+                  setTimeout(() => {
+                    document
+                      .getElementById("iconList")
+                      .classList.remove("vertical-shake");
+                  }, 1000);
+                }
               }}
               key={i}
             >

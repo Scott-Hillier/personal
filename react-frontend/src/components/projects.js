@@ -69,7 +69,6 @@ const Projects = () => {
     <section className="projects" id="projects">
       <h1>PROJECTS</h1>
       <br />
-      {/* <ScrollAnimation animateIn="fadeIn"> */}
       <div className="project-area">
         {projects.map((project, i) => {
           const indexLeft = adjacent(index - 1);
@@ -89,20 +88,17 @@ const Projects = () => {
 
           return (
             <div className={className} key={i} onClick={() => setIndex(i)}>
-              {/* <a href={project.href}> */}
               <h2 className="project-title">{project.name}</h2>
               <img
                 src={project.original}
                 className="project-image"
-                alt="Strange there should be an image here"
-              />{" "}
-              {/* </a> */}
+                alt="Wow such empty"
+              />
               <h4 className="project-description">{project.description}</h4>
             </div>
           );
         })}
       </div>
-      {/* </ScrollAnimation> */}
       <br />
     </section>
   );

@@ -17,14 +17,14 @@ const Contact = () => {
       >
         613-402-5186
       </div>
-      <div className="icons">
+      <div className="icons" id="iconList">
         <a href="https://www.linkedin.com/in/scott-hillier-11aaa5197/">
           <i className="bi bi-linkedin icon"></i>
         </a>
         <a href="https://github.com/Scott-Hillier">
           <i className="bi bi-github icon"></i>
         </a>
-        <a>
+        <a href="mailto:scotthhillier@gmail.com">
           <i
             className="bi bi-envelope-fill icon"
             onClick={() => {

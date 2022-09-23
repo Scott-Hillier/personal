@@ -8,7 +8,7 @@ const Description = () => {
       <p>
         There, I was first introduced to coding and after graduating I decided
         to improve my skillset and enrolled in the Lighthouse Labs web
-        developement bootcamp.
+        development bootcamp.
       </p>
       <p>Here are some of the projects that I've worked on.</p>
       <br />

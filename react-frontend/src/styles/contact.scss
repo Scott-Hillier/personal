@@ -3,7 +3,7 @@
 }
 
 .icons {
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -14,13 +14,39 @@
 }
 
 .icon {
-  font-size: 2.2vw;
-  color: black;
+  color: rgb(207, 207, 207);
+  font-size: 4.5vh;
   transition: font-size 0.2s ease;
 }
 .icon:hover {
-  font-size: 2.6vw;
+  color: black;
   cursor: pointer;
+}
+
+#iconList {
+  animation-duration: 0.5s;
+}
+
+.vertical-shake {
+  animation: vertical-shaking 0.35s infinite;
+}
+
+@keyframes vertical-shaking {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  75% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .phone-popup {

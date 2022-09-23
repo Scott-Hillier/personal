@@ -97,6 +97,7 @@ const Projects = () => {
                   <h2 className="project-title">{project.name}</h2>
                   <a href={project.href}>
                     <i className="bi bi-github project-href"></i>
+                    <h5>View on GitHub</h5>
                   </a>
                 </div>
               ) : (

@@ -13,7 +13,21 @@ const Menu = () => {
       {list.map((list, i) => {
         return (
           <a href={list.href} className="list-item" key={i}>
-            <li key={i}>{list.name}</li>
+            <li
+              onClick={() => {
+                document
+                  .getElementById("iconList")
+                  .classList.add("vertical-shake");
+                setTimeout(() => {
+                  document
+                    .getElementById("iconList")
+                    .classList.remove("vertical-shake");
+                }, 1000);
+              }}
+              key={i}
+            >
+              {list.name}
+            </li>
           </a>
         );
       })}

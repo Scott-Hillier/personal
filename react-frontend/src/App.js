@@ -20,6 +20,7 @@ function App() {
         <Projects />
         <br />
         <br />
+        <br />
         <Education />
         <br />
         <br />

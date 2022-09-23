@@ -6,35 +6,39 @@ const Projects = () => {
     {
       name: "Odyssey",
       description:
-        "Outdoor adventure planningsOutdoor adventure planningsOutdoor adventure planningsOutdoor adventure planningsOutdoor adventure planningsOutdoor adventure planningsOutdoor adventure plannings",
+        "An adventure planning app for outdoor enthusiasts. Built from the ground up using React, NodeJS, SCSS, and PostgreSQL, this web app allows users to plan every aspect of their next journey from route building to setting up an emergency contact.",
       stack: "React, NodeJS, PostgreSQL",
       href: "https://github.com/Scott-Hillier/Odyssey",
       image: "../images/projects",
     },
     {
       name: "Interview Scheduler",
-      description: "Scheduler to help individuals arrange their interviews",
+      description:
+        "Platform for users to plan and arrange their interviews and meetings. Built using Javascript, HTML, and SCSS.",
       stack: "React",
       href: "https://github.com/Scott-Hillier/scheduler",
       image: "../images/projects",
     },
     {
       name: "Jungle",
-      description: "E-commerce website for users to buy and sell items",
+      description:
+        "E-commerce website for users to buy and sell items with ease. Built using Ruby on Rails.",
       stack: "Ruby on Rails",
       href: "https://github.com/Scott-Hillier/jungle",
       image: "../images/projects",
     },
     {
       name: "Tournament Organizer",
-      description: "Tournament organizing website for the bike polo community",
+      description:
+        "Tournament organizing website for the bike polo community. This web app will help ease many of the issues faced by organizers and participants alike. Built using React, NodeJS, SCSS, and PostgreSQL.",
       stack: "React, NodeJS, PostgreSQL",
       href: "https://github.com/Scott-Hillier/tournament-organizer",
       image: "../images/projects",
     },
     {
       name: "Wiki-Maps",
-      description: "Outdoor adventure planning",
+      description:
+        "Platform for users to interact with others to locate their favourite spots. Built using Javascript, NodeJS, HTML, CSS, and PostgreSQL.",
       stack: "Javascript, NodeJS, PostgreSQL",
       href: "https://github.com/Scott-Hillier/wiki-map",
       image: "../images/projects",
@@ -88,7 +92,16 @@ const Projects = () => {
 
           return (
             <div className={className} key={i} onClick={() => setIndex(i)}>
-              <h2 className="project-title">{project.name}</h2>
+              {i === index ? (
+                <div className="project-header">
+                  <h2 className="project-title">{project.name}</h2>
+                  <a href={project.href}>
+                    <i className="bi bi-github project-href"></i>
+                  </a>
+                </div>
+              ) : (
+                <h2 className="project-title">{project.name}</h2>
+              )}
               <img
                 src={project.original}
                 className="project-image"

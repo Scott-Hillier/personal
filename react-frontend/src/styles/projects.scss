@@ -21,6 +21,7 @@
   height: 40vh;
   text-align: center;
   padding: 0.5em;
+  padding-bottom: 0em;
   background-color: rgb(31, 31, 31);
   border: 2px solid grey;
   border-radius: 20px;
@@ -45,7 +46,7 @@
   height: 60vh;
   .project-description {
     opacity: 1;
-    transform: translateY(50%);
+    transform: translateY(65%);
   }
 }
 
@@ -68,6 +69,16 @@
 .project--hidden {
   transform: scale(0.6);
   opacity: 0;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+
+.project-href {
+  color: white;
 }
 
 .project-description {

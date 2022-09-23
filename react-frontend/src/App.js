@@ -27,7 +27,11 @@ function App() {
         <br />
         <br />
         <br />
-        <h3>Thanks for stopping by!</h3>
+        <h3>
+          Thanks for stopping by! If you want to get in touch all my contact
+          information is in the top right corner.
+        </h3>
+        <br />
       </section>
       <Contact />
     </div>

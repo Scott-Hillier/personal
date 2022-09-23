@@ -1,4 +1,9 @@
+.contact {
+  display: flex;
+}
+
 .icons {
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -6,7 +11,6 @@
   right: 0px;
   top: 2vh;
   height: 25vh;
-  position: fixed;
 }
 
 .icon {
@@ -17,4 +21,46 @@
 .icon:hover {
   font-size: 2.6vw;
   cursor: pointer;
+}
+
+.phone-popup {
+  position: fixed;
+  top: 210px;
+  right: 0vw;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.phone-popup-active {
+  position: fixed;
+  top: 210px;
+  right: 6vw;
+  transition: 0.5s;
+  color: black;
+  background-color: rgb(221, 221, 221);
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 0.1em;
+  opacity: 1;
+}
+
+.email-popup {
+  position: fixed;
+  top: 145px;
+  right: 0vw;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.email-popup-active {
+  position: fixed;
+  top: 145px;
+  right: 6vw;
+  transition: 0.5s;
+  color: black;
+  background-color: rgb(221, 221, 221);
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 0.1em;
+  opacity: 1;
 }

@@ -33,6 +33,7 @@ const Education = () => {
     <section className="educations" id="educations">
       <h1>EDUCATION</h1>
       <br />
+      <br />
       {educations.map((education, i) => {
         return (
           <ScrollAnimation animateIn="fadeIn" key={i}>
@@ -43,6 +44,7 @@ const Education = () => {
               <h3>{education.description}</h3>
               <h5>{education.years}</h5>
             </div>
+            <br />
             <br />
           </ScrollAnimation>
         );

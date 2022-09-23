@@ -1,10 +1,7 @@
-import { useEffect, useState } from "react";
-import ScrollAnimation from "react-animate-on-scroll";
+import { useState } from "react";
 import "../styles/projects.scss";
 
 const Projects = () => {
-  const [description, setDescription] = useState(false);
-
   const projects = [
     {
       name: "Odyssey",
@@ -51,7 +48,7 @@ const Projects = () => {
     require.context("../images/projects", false, /\.(png|jpe?g|svg)$/)
   );
   images.map((image, i) => {
-    projects[i].original = image;
+    return (projects[i].original = image);
   });
 
   const [index, setIndex] = useState(0);
@@ -67,13 +64,6 @@ const Projects = () => {
 
     return index;
   };
-
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setIndex((index + 1) % projects.length);
-  //     console.log(index);
-  //   }, 5000);
-  // }, [index]);
 
   return (
     <section className="projects" id="projects">
@@ -101,7 +91,11 @@ const Projects = () => {
             <div className={className} key={i} onClick={() => setIndex(i)}>
               {/* <a href={project.href}> */}
               <h2 className="project-title">{project.name}</h2>
-              <img src={project.original} className="project-image" />{" "}
+              <img
+                src={project.original}
+                className="project-image"
+                alt="Strange there should be an image here"
+              />{" "}
               {/* </a> */}
               <h4 className="project-description">{project.description}</h4>
             </div>

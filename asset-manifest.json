@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/personal/static/css/main.21da8d2f.css",
+    "main.js": "/personal/static/js/main.d76e0b44.js",
+    "static/js/787.8c9fdc25.chunk.js": "/personal/static/js/787.8c9fdc25.chunk.js",
+    "static/media/01_Odyssey.png": "/personal/static/media/01_Odyssey.6bbb3b5f46ba648d6549.png",
+    "static/media/05_Wiki-Maps.png": "/personal/static/media/05_Wiki-Maps.5817199a3c9a7ee5c421.png",
+    "static/media/03_Nice.jpeg": "/personal/static/media/03_Nice.7c551f67ef5a4f365177.jpeg",
+    "static/media/04_Jungle.png": "/personal/static/media/04_Jungle.461835712e3fdd901495.png",
+    "static/media/04_Tournaments.png": "/personal/static/media/04_Tournaments.252cf6e38f0450048731.png",
+    "static/media/02_Dog_Mountain.jpeg": "/personal/static/media/02_Dog_Mountain.3dde743d62ad9d8de3ab.jpeg",
+    "static/media/04_Polo.jpg": "/personal/static/media/04_Polo.57cd9233743ba0a55d2c.jpg",
+    "static/media/03_Interviews.png": "/personal/static/media/03_Interviews.eca62e8e1ba1b17573c5.png",
+    "static/media/bg.jpeg": "/personal/static/media/bg.d64fba716fd7ecb88a46.jpeg",
+    "static/media/01_Profile.jpeg": "/personal/static/media/01_Profile.1b4a936aafe6cfd69f00.jpeg",
+    "static/media/02_lighthouse.png": "/personal/static/media/02_lighthouse.91df0bb0858492d67bd6.png",
+    "static/media/01_carleton.png": "/personal/static/media/01_carleton.f04f4101257d50467954.png",
+    "index.html": "/personal/index.html",
+    "main.21da8d2f.css.map": "/personal/static/css/main.21da8d2f.css.map",
+    "main.d76e0b44.js.map": "/personal/static/js/main.d76e0b44.js.map",
+    "787.8c9fdc25.chunk.js.map": "/personal/static/js/787.8c9fdc25.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.21da8d2f.css",
+    "static/js/main.d76e0b44.js"
+  ]
+}

@@ -33,15 +33,13 @@ const Contact = () => {
             }}
           ></i>
         </a>
-        <a>
-          <i
-            className="bi bi-telephone-fill icon"
-            onClick={() => {
-              displayPhone ? setDisplayPhone(false) : setDisplayPhone(true);
-              navigator.clipboard.writeText("613-402-5186");
-            }}
-          ></i>
-        </a>
+        <i
+          className="bi bi-telephone-fill icon"
+          onClick={() => {
+            displayPhone ? setDisplayPhone(false) : setDisplayPhone(true);
+            navigator.clipboard.writeText("613-402-5186");
+          }}
+        ></i>
       </div>
     </section>
   );

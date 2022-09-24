@@ -10,10 +10,11 @@ const Images = () => {
   );
   const slideshow = [];
   images.map((image) => {
-    slideshow.push({
+    return slideshow.push({
       original: image,
     });
   });
+
   return (
     <section className="images" id="images">
       <ImageGallery

@@ -26,7 +26,7 @@ const Education = () => {
     require.context("../images/education", false, /\.(png|jpe?g|svg)$/)
   );
   images.map((image, i) => {
-    educations[i].original = image;
+    return (educations[i].original = image);
   });
 
   return (
@@ -38,7 +38,11 @@ const Education = () => {
         return (
           <ScrollAnimation animateIn="fadeIn" key={i}>
             <div className={i % 2 ? "education-right" : "education-left"}>
-              <img src={education.original} className="education-image" />
+              <img
+                src={education.original}
+                className="education-image"
+                alt="Collection of pixels"
+              />
               <h1> </h1>
               <h4>{education.certificate}</h4>
               <h3>{education.description}</h3>

@@ -1,5 +1,6 @@
 {
-  "name": "react-frontend",
+  "homepage": "http://Scott-Hillier.github.io/personal",
+  "name": "personal",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -44,6 +45,5 @@
   },
   "devDependencies": {
     "gh-pages": "^4.0.0"
-  },
-  "homepage": "http://scott-hillier.github.io/scott"
+  }
 }

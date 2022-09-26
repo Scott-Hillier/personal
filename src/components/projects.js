@@ -97,7 +97,7 @@ const Projects = () => {
                   <h2 className="project-title">{project.name}</h2>
                   <a href={project.href} className="project-github">
                     <i className="bi bi-github project-href"></i>
-                    <h5>View on GitHub</h5>
+                    <h5>GitHub</h5>
                   </a>
                 </div>
               ) : (
@@ -108,7 +108,7 @@ const Projects = () => {
                 className="project-image"
                 alt="Wow such empty"
               />
-              <h4 className="project-description">{project.description}</h4>
+              <h5 className="project-description">{project.description}</h5>
             </div>
           );
         })}

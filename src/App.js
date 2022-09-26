@@ -21,6 +21,7 @@ function App() {
         <br />
         <br />
         <br />
+        <br />
         <Education />
         <br />
         <br />

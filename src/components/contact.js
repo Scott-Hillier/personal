@@ -29,7 +29,7 @@ const Contact = () => {
             className="bi bi-envelope-fill icon"
             onClick={() => {
               displayEmail ? setDisplayEmail(false) : setDisplayEmail(true);
-              navigator.clipboard.writeText("613-402-5186");
+              navigator.clipboard.writeText("scotthhillier@gmail.com");
             }}
           ></i>
         </a>

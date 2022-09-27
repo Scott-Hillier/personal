@@ -36,7 +36,7 @@ const Education = () => {
       <br />
       {educations.map((education, i) => {
         return (
-          <ScrollAnimation animateIn="fadeIn" key={i}>
+          <ScrollAnimation animateIn="fadeIn" offset="250" key={i}>
             <div className={i % 2 ? "education-right" : "education-left"}>
               <img
                 src={education.original}

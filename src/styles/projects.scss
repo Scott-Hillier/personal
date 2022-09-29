@@ -30,7 +30,7 @@
 
 .project-image {
   width: 95%;
-  max-height: 40vh;
+  max-height: 37vh;
   z-index: 9;
 }
 
@@ -43,10 +43,10 @@
   z-index: 9;
 }
 .project--active:hover {
-  height: 65vh;
+  height: 60vh;
   .project-description {
     opacity: 1;
-    transform: translateY(62%);
+    transform: translateY(62.5%);
   }
 }
 

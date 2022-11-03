@@ -108,7 +108,7 @@ const Projects = () => {
                 className="project-image"
                 alt="Wow such empty"
               />
-              <h5 className="project-description">{project.description}</h5>
+              <div className="project-description">{project.description}</div>
             </div>
           );
         })}

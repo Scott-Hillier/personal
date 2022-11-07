@@ -1,6 +1,8 @@
+import "../styles/description.scss";
+
 const Description = () => {
   return (
-    <section id="about">
+    <section className="description">
       <p>
         My name is Scott Hillier. I attended Carleton University where I earned
         a bachelor's degree in aerospace engineering. I was first introduced to

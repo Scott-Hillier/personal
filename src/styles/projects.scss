@@ -17,8 +17,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 30vw;
-  height: 30vw;
   text-align: center;
   padding: 0.5em;
   padding-bottom: 0em;
@@ -28,15 +26,21 @@
   transition: 0.7s;
 }
 
-.project-image {
+.project-image-active {
   width: 95%;
   max-height: 20vw;
   z-index: 9;
 }
 
+.project-image {
+  width: 95%;
+  max-height: 10vw;
+  z-index: 9;
+}
+
 .project--active {
   align-items: center;
-  width: 40vw;
+  width: 40%;
   height: 30vw;
   opacity: 1;
   transform: scale(1);
@@ -62,8 +66,8 @@
 }
 
 .project--left {
-  width: 22vw;
-  height: 30vh;
+  width: 22%;
+  height: 10%;
   transform: translateX(-135%) scale(0.6);
   transition: 500ms;
   opacity: 0.3;

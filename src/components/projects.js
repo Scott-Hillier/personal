@@ -105,7 +105,7 @@ const Projects = () => {
               )}
               <img
                 src={project.original}
-                className="project-image"
+                className={`project-image${i === index ? `-active` : ``}`}
                 alt="Wow such empty"
               />
               <div className="project-description">{project.description}</div>
